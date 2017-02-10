@@ -1,0 +1,6 @@
+ 
+
+
+:global(.ant-layout-sider-collapsed .navText) {
+  display: none;
+}

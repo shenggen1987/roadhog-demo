@@ -22,3 +22,12 @@ $ npm start
 ```
 
 If success, app will be open in your default browser automatically.
+
+
+"proxy": {
+    "/api": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },

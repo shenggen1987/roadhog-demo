@@ -3,9 +3,19 @@ import { connect } from 'dva';
 import styles from './IndexPage.css';
 import MainLayout from '../components/MainLayout/MainLayout';
 
-function IndexPage({ location }) {
+function IndexPage({ dispatch,location }) {
+
+  const siderProps = {
+    changeCollapsed(collapsed){
+      dispatch({
+        type: 'indexPage/changeCollapsed',
+        payload: { collapsed },
+      });
+    }
+  }
+
   return (
-    <MainLayout location={location}>
+    <MainLayout location={location} {...siderProps}>
       <div className={styles.normal}>
         <h1 className={styles.title}>Yay! Welcome to dva!</h1>
         <div className={styles.welcome} />
@@ -18,7 +28,10 @@ function IndexPage({ location }) {
   );
 }
 
-IndexPage.propTypes = {
-};
+function mapStateToProps(state) {
+  return {
+    collapsed: state.indexPage.collapsed
+  };
+}
 
-export default connect()(IndexPage);
+export default connect(mapStateToProps)(IndexPage);
