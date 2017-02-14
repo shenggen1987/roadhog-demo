@@ -1,6 +1,6 @@
 const Mock = require('mockjs')
 export default {
-    'GET /api/results': Mock.mock({
+    'GET /api/users': Mock.mock({
         'data|100': [{
             'id|+1': 1,
             name: '@cname',

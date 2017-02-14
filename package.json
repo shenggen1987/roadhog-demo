@@ -4,8 +4,7 @@
     "start": "roadhog server",
     "build": "roadhog build",
     "test": "roadhog test",
-    "lint": "eslint --ext .js src test",
-    "precommit": "npm run lint"
+    "lint": "eslint --ext .js src test"
   },
   "dependencies": {
     "antd": "^2.5.2",
@@ -13,7 +12,11 @@
     "dva": "^1.2.1",
     "dva-loading": "^0.2.0",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
