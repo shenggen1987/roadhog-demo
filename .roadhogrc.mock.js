@@ -22,7 +22,7 @@ export default {
         success: true
     }),
     'GET /users1': [{name:'sorrycc'}, {name:'pigcan'}],
-    'GET /api/orders': Mock.mock({
+    'GET /api/order': Mock.mock({
         'data|10': [{
             'key|+1': 1,
             'id|+1': 1,

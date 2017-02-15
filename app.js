@@ -20,6 +20,7 @@ app.all('/api/*', function(req, res, next) {
     console.log(url);
     req.pipe(request(url)).pipe(res);
 });
+
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');

@@ -1,0 +1,8 @@
+[{
+  "name"        : "dva-node",
+  "script"      : "app.js",
+  "error_file" : "app-err.log",
+  "out_file"   : "app-out.log",
+  "pid_file"   : "app.pid",
+  "instances": 2
+}]

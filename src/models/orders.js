@@ -19,14 +19,14 @@ export default {
   	*fetch({ payload: { page = 1, ...query } }, { call, put }) {
 
       const { data, headers } = yield call(usersService.fetch, { page });
-      const condition = yield call(usersService.condition);
+      // const condition = yield call(usersService.condition);
       yield put({
         type: 'search',
         payload: {
           list: data.data,
           total: data.total,
           page: parseInt(page, 10),
-          status: condition.data.data.status,
+          status: [], //condition.data.data.status,
           query: query
         },
       });

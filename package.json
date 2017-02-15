@@ -4,7 +4,8 @@
     "start": "roadhog server",
     "build": "roadhog build",
     "test": "roadhog test",
-    "lint": "eslint --ext .js src test"
+    "lint": "eslint --ext .js src test",
+    "release": "pm2 startOrGracefulReload ./pm2.json --no-daemon"
   },
   "dependencies": {
     "antd": "^2.5.2",
@@ -16,6 +17,7 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "querystring": "^0.2.0",
     "request": "^2.79.0"
   },
   "devDependencies": {

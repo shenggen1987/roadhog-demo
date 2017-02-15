@@ -31,3 +31,12 @@ If success, app will be open in your default browser automatically.
       "pathRewrite": { "^/api" : "" }
     }
   },
+
+=======
+
+  sudo docker build --tag="hub.qjdchina.com/hanhao/dva-node:v0.0.1" ./
+  sudo docker push hub.qjdchina.com/hanhao/dva-node:v0.0.1
+
+  ===========
+
+  sudo docker run -d -p 5300:80 hub.qjdchina.com/hanhao/dva-node:v0.0.1
