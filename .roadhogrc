@@ -10,8 +10,13 @@
     "@line-height-base": "1.2"
   },
   "autoprefixer": null,
-  
-  "proxy": null,
+  "proxy": {
+    "/api": {
+      "target": "http://10.1.31.35:5200/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
   "extraBabelPlugins": [
     "transform-runtime",
     ["import", { "libraryName": "antd", "style": true }]
