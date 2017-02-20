@@ -40,3 +40,7 @@ If success, app will be open in your default browser automatically.
   ===========
 
   sudo docker run -d -p 5300:80 hub.qjdchina.com/hanhao/dva-node:v0.0.1
+
+
+ ========
+ 访问地址  http://10.1.31.35:5300/orders
